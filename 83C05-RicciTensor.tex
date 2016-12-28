@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RicciTensor}
+\pmcreated{2013-03-22 15:02:38}
+\pmmodified{2013-03-22 15:02:38}
+\pmowner{rmilson}{146}
+\pmmodifier{rmilson}{146}
+\pmtitle{Ricci tensor}
+\pmrecord{9}{36758}
+\pmprivacy{1}
+\pmauthor{rmilson}{146}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{83C05}
+\pmdefines{scalar curvature}
+\pmdefines{Einstein tensor}
+\pmdefines{ricci scalar}
+\pmdefines{Weyl tensor}
+\pmdefines{Weyl curvature tensor}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\Ric}{\operatorname{Ric}}
+\begin{document}
+\paragraph{Definition.}
+The \emph{Ricci curvature tensor} is a rank $2$, symmetric tensor that
+arises naturally in pseudo-Riemannian geometry.  Let $(M,g_{ij})$ be a
+smooth, $n$-dimensional pseudo-Riemannian manifold, and let
+$R^i{}_{jkl}$ denote the corresponding Riemann curvature tensor.  The
+Ricci tensor $R_{ij}$ is commonly defined as the following contraction
+of the full curvature tensor:
+\[R_{ij} = R^k{}_{ikj}.
+\] 
+The index symmetry of $R_{ij}$, so defined, follows from the symmetry
+properties of the Riemann curvature.  To wit,
+\[ R_{ij} = R^k{}_{ikj} = R_{ki}{}^k{}_j = R^k{}_{jki} = R_{ji}.\]
+It is also convenient to regard the Ricci tensor as a symmetric bilinear
+form.  To that end for vector-fields  $X,Y$ we will write
+\[ \Ric(X,Y) = X^i Y^j R_{ij}.\]
+\paragraph{Related objects.}
+Contracting the Ricci tensor, we obtain an important scalar invariant
+\[R=R^i{}_i,\] called the scalar curvature, and sometimes also called
+the Ricci scalar.  Closely related to the Ricci tensor is the tensor
+\[G_{ij} = R_{ij} - \frac{1}{2} R\, g_{ij},\] called the \emph{Einstein
+tensor}.  The Einstein tensor is also known as the trace-reversed Ricci
+tensor owing to the fact that
+\[  G^i{}_i = - R. \]
+Another related tensor is
+\[S_{ij} = R_{ij} - \frac{1}{n} R\, g_{ij}.\]
+This is called 
+the
+trace-free Ricci tensor, owing to the fact that the above definition
+implies that
+\[ S^i{}_i=0.\]
+
+
+
+\paragraph{Geometric interpretation.}
+In Riemannian geometry, the Ricci tensor represents the average value
+of the sectional curvature along a particular direction.  
+Let 
+\[ K_x(u,v) = \frac{R_x(u,v,v,u)}{g_x(u,u) g_x(v,v) - g_x(u,v)^2}
+\]
+denote the sectional curvature of $M$ along the plane spanned by
+vectors $u,v\in T_x M$. Fix a point $x\in M$ and a tangent vector
+$v\in T_xM$, and let
+\[
+S_x(v)=\{ u\in T_xM \colon g_x(u,u) = 1,\; g_x(u,v)=0 \}
+\] denote the $n-2$ dimensional
+sphere of those unit vectors at $x$ that are perpendicular to $v$.
+ Let $\mu_x$ denote the natural
+$(n-2)$-dimensional volume measure on $T_xM$, normalized so that
+\[ \int_{S_x(v)} \mu_x = 1.\]
+In this way, the quantity
+\[ \int_{S_x(v)}\!\! K_x(\cdot,v) \mu_x, \]
+describes the average value of the sectional curvature for all planes
+in $T_x M$ that contain $v$.  It is possible to show that
+\[ \Ric_x(v,v)= (1-n)\int_{S_x(v)}\!\! K_x(\cdot,v) \mu_x,\]
+thereby giving us the desired geometric interpretation.
+
+
+\paragraph{Decomposition of the curvature tensor.}
+For $n\geq 3$, the Ricci tensor can be characterized in terms of the
+decomposition of the full curvature tensor into three covariantly
+defined summands, namely
+\begin{align*}
+  F_{ijkl} &= \tfrac{1}{n-2} \left( S_{jl}\, g_{ik}+S_{ik}\,
+    g_{jl}-S_{il}\, g_{jk}-S_{jk}\, g_{il}\right),\\
+  E_{ijkl} &= \tfrac{1}{n(n-1)}R \left( g_{jl}\,g_{ik} -
+    g_{il}\,g_{jk}\right),\\
+    W_{ijkl} &= R_{ijkl}-F_{ijkl}-E_{ijkl}.
+\end{align*}
+The $W_{ijkl}$ is called the \emph{Weyl curvature tensor}. It is
+the conformally invariant, trace-free part of the curvature tensor.
+Indeed, with the above definitions, we have
+\[ W^k{}_{ikj}=0.\] The $E_{ijkl}$ and $F_{ijkl}$ correspond to the
+trace-free part of the Ricci curvature tensor, and to the Ricci
+scalar.  Indeed, we can recover $S_{ij}$ and $R$ from $E_{ijkl}$ and
+$F_{ijkl}$ as follows:
+\begin{align*}
+  S_{ij} &=  F^k{}_{ikj},\\
+  E^{ij}{}_{ij} &= R.
+\end{align*}
+
+\paragraph{Relativity.}  The Ricci tensor also plays an important role
+in the theory of general relativity.  In this keystone application,
+$M$ is a 4-dimensional pseudo-Riemannian manifold with signature
+$(3,1)$.  The Einstein field equations assert that the energy-momentum
+tensor is proportional to the Einstein tensor.  In particular, the
+equation
+\[ R_{ij}=0 \]
+is the field equation for a vacuum space-time.  In geometry, a
+pseudo-Riemannian manifold that satisfies this equation is called
+Ricci-flat.  It is possible to prove that a manifold is Ricci flat if
+and only if locally, the manifold, is conformally equivalent to flat space.
+%%%%%
+%%%%%
+\end{document}

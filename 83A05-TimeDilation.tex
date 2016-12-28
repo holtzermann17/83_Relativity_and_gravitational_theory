@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TimeDilation}
+\pmcreated{2013-03-22 18:08:17}
+\pmmodified{2013-03-22 18:08:17}
+\pmowner{curious}{18562}
+\pmmodifier{curious}{18562}
+\pmtitle{time dilation}
+\pmrecord{6}{40691}
+\pmprivacy{1}
+\pmauthor{curious}{18562}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{83A05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Time dilation is the difference in time intervals between inertial frames of reference moving with respect to each other. This is usually studied in Physics, but here is the mathematics behind it.\linebreak
+Consider a train moving with speed $u$ and an observer standing still. Let the station (where observer is standing) be inertial frame of reference $S$, and train be inertial frame of reference $S'$. A light source and a mirror are placed vertically above each other in the train as shown.
+\begin{figure}
+\begin{center}
+\includegraphics{draw2.eps}
+\caption{Path of light according to a person in the train}
+\end{center}
+\end{figure}
+Let $\Delta t_0$ denote the time taken for light to travel from the source back to the source according to a person on the train. In other words, in frame of reference $S'$ the time taken for light to travel is given by:
+$$\Delta t_0 = \frac{2d}{c}$$ where $c$ is the speed of light.
+The round-trip time measured by the observer in frame $S$ is a different interval $\Delta t$. This is what he would observe:
+\begin{figure}
+\begin{center}
+\includegraphics{draw3.eps}
+\caption{Path of light according to observer}
+\end{center}
+\end{figure}
+To the observer, the events of light leaving the source and coming back occur at different points in space. The distance travelled by light in this case is $2l$, and by the Pythagorean theorem:
+$$l=\sqrt{d^2 + \left(\frac{u\Delta t}{2}\right)^2}$$
+Now the time for light to travel, according to observer, is:
+$$\Delta t=\frac{2l}{c}=\frac{2}{c}\sqrt{d^2 + \left(\frac{u\Delta t}{2}\right)^2}$$
+But we know from the equation above that $\Delta t_0 = 2d/c$, and by rearranging, $d=c\Delta t_0/2$. Now we substitute to get:
+$$\Delta t=\frac{2}{c}\sqrt{\left(\frac{c\Delta t_0}{2}\right)^2 + \left(\frac{u\Delta t}{2}\right)^2}$$
+Now let us rearrange and solve for $\Delta t$:
+$$c^2\Delta t^2 = c^2\Delta t_0^2 + u^2\Delta t^2$$
+$$(c^2-u^2)\Delta t^2 = c^2\Delta t_0^2$$
+$$\Delta t^2 = \frac{c^2\Delta t_0^2}{c^2-u^2}$$
+Dividing the numerator and denominator by $c^2$ and taking the square root yields:
+$$\Delta t = \frac{\Delta t_0}{\sqrt{1-u^2/c^2}}$$
+Since the expression $1/\sqrt{1-u^2/c^2}$ occurs quite frequently in relativity, sometimes it is preferable to use the letter $\gamma$ to represent it. Therefore:
+$$\gamma = \frac{1}{\sqrt{1-u^2/c^2}}$$
+The equation for time dilation can then be written this way:
+$$\Delta t = \gamma \Delta t_0$$
+\paragraph{History and Uses}
+This is a very famous result in relativity, and in fact it was the basis for the evolvement of relativistic mechanics, in which Albert Einstein defiantly challenged Newton's equations for objects with very high speeds. From this, mechanics was classified into two branches: Newtonian mechanics and Relativistic mechanics. It was also the basis of Einstein's theory of relativity $E=mc^2$, and many other equations in relativity. The time dilation equation can be used to calculate the difference in time intervals between two inertial frames moving with respect to each other.
+
+
+%%%%%
+%%%%%
+\end{document}

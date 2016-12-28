@@ -1,0 +1,169 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EinsteinFieldEquations}
+\pmcreated{2013-03-22 15:02:34}
+\pmmodified{2013-03-22 15:02:34}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{Einstein field equations}
+\pmrecord{25}{36757}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{83C05}
+\pmsynonym{Einstein's GR equations}{EinsteinFieldEquations}
+%\pmkeywords{Einstein's GR equations}
+%\pmkeywords{quantum spece-times}
+%\pmkeywords{quantum Riemannian geometry}
+\pmrelated{CategoryOfRiemannianManifolds}
+\pmrelated{PseudoRiemannianManifold}
+\pmrelated{QuantumGeometry2}
+\pmrelated{QuantumSpaceTimes}
+\pmrelated{QuantumGravityTheories}
+\pmrelated{RiemannianMetric}
+\pmrelated{MathematicalProgrammesForDevelopingQuantumGravityTheories}
+\pmrelated{MathematicalProgrammesForDevelopingQuantumGravityTheories}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\section{Introduction and Definition}
+
+The \emph{Einstein Field Equations} are the fundamental equations of Einstein's
+general theory of relativity.  For a description of this physical theory and of
+the physical significance of solutions of these \PMlinkexternal{equations}{http://planetphysics.org/encyclopedia/TopicOnEquationsInMathematicalPhysics.html}, please see 
+\PMlinkexternal{PlanetPhysics}{http://planetphysics.org/}.  Here, we shall discuss the mathematical properties of these
+equations and their relevance to various branches of pure mathematics.
+
+The Einstein field equations are a system of second order coupled nonlinear partial differential equations for a Riemannian metric tensor on a Riemannian manifold.  Let $M$ be
+a differentiable manifold and let $T_{\mu \nu}$ and $g_{\mu \nu}$ be symmetric
+tensor fields \footnote{Throughout this entry, we shall use index notation
+for tensor fields because that is common in the literature (especially physics literature) and is convenient for computation of particular solutions.  
+Moreover, we shall, fittingly enough, employ Einstein's summation convention.}.  Further, assume that $g_{\mu \nu}$ is invertible on a dense subset of $M$ and twice differentiable.  (It is possible to relax the latter requirement by interpreting the equations distributionally.)  Then the Einstein equations 
+read as follows:
+\footnote{In the physics literature, the coefficient of $T_{\mu \nu}$ is
+written as $\frac{8\pi G}{c^4}$, where $G$ is the gravitational constant, 
+$c$ is the light velocity constant but, since we are interested in the purely
+mathematical properties of these equations, we shall set $G = c = 1$ here,
+which may be accomplished by working in a suitable set of physical units.
+It might also be worth mentioning that, in physics, the tensor $T_{\mu \nu}$ 
+is the stress-energy tensor, which encodes data pertaining to the mass, energy, and momentum densities of the surrounding space.  The number $\Lambda$
+is known as the cosmological constant because it determines large-scale
+properties of the universe, such as whether it collapses, remains stationary, or expands.}
+ \[G_{\mu \nu} = \Lambda g_{\mu \nu} + 8 \pi T_{\mu \nu}\]
+Here, $G_{\mu\upsilon}=R_{\mu\upsilon}-\frac{1}{2}g_{\mu\upsilon}R$
+is the \emph{Einstein Tensor}, $R_{\mu\upsilon}$ is the Ricci tensor, and 
+$R=g^{\mu\nu}R_{\mu\nu}$ is the Ricci scalar, and $g^{\mu\nu}$ is the 
+inverse metric tensor.  
+
+One possibility is that the tensor field $T_{\mu \nu}$ is specified and that
+these equations are then solved to obtain $g_{\mu \nu}$.  A noteworthy case of 
+this is the \emph{vacuum Einstein equations}, in which $T_{\mu \nu} = 0$.
+Another possibility is that $T_{\mu \nu}$ is given in terms of some other
+fields on the manifold and that the Einstein equations are augmented by
+differential equations which describe those fields.  In that case, one speaks
+of Einstein-Maxwell equations, Einstein-Yang-Mills equations, and the like
+depending on what these other fields may happen to be.  It should be noted 
+that, on account of the Bianchi identity, there is an integrability condition
+$\nabla_\mu (g) T^{\mu \nu} = 0$.  (Here, $\nabla (g)$ denotes covariant
+differentiation with respect to the Levi-Civita connection of the metric
+tensor $g_{\mu \nu}$.)  When choosing $T_{\mu \nu}$, these conditions must
+be taken into account in order to guarantee that a solution is possible.
+
+\section{Diffeomorphism Invariance}
+
+Because they are constructed from tensors, the Einstein equations have an
+important invariance property.  Suppose that $g_{\mu \nu}$ and $T_{\mu \nu}$ satisfy the Einstein equations.  Then, for any diffeomorphism $f \colon M \to
+M$, we also have that $(f^* g)_{\mu \nu}$ and $(f^* T)_{\mu \nu}$ also 
+satisfy the Einstein equations.  (Here, the notation $f^*$ denotes pullback 
+with respect to the diffeomorphism $f$.)
+
+This fact means that we must be careful when talking about specifying solutions
+by boundary conditions.  Usually, when dealing with a differential equation,
+we would expect that we could specify a solution uniquely by providing enough
+boundary data.  Here, however, this will not work since we could find a
+diffeomorphism which reduces to the identity near the boundary but differs
+from the identity elsewhere and use that to produce another solution which 
+would satisfy the same boundary conditions.  What one should do instead is to
+consier equivalence classes of solutions modulo diffeomorphism and only
+ask that boundary conditions specify solutions up to diffeomorphisms.  As we
+shall see later, with such an understanding, one can indeed specify solutions 
+in terms of initial data.
+
+In order to adress this issue and to be able to treat the Einstein equations
+much as one would treat other differential equations, a common practise is to
+supplement the Einstein equations with auxiliary condidtions which serve to
+define a coordinate system and hence single out a particular element of an
+equivalence class in diffeomorphism.  While such auxiliary equations should
+ideally single out a representative for each equivalence class, in practise,
+one is content with considerably less --- a particular choice auxiliary 
+conditions might only work with some solutions or may only specify a 
+subset of an equivalence class with more than one element. 
+
+\textbf{Remarks:}
+The major obstruction to the GR theory is that Einstein's GR equations--although solvable in principle--
+are readily solvable only in special cases, with specified boundary conditions. The bigger
+problem is the difficulty of formulating quantum field theories (QFT) in a manner
+which is logically consistent with Einstein's GR formulation so that a valid Quantum Gravity (QG) theory
+is formulated that yields results consistent with both GR and quantum theories in the presence of intense
+gravitational fields. So far, encouraging results have been obtained only for the limiting case
+of low intensity gravitational fields as in S. Weinberg's algebraic approach to QFT  and QG using supersymmetry and 
+graded `Lie' algebras or superalgebras. 
+
+\section{Hyperbolic Formulations}
+
+\section{Variational Principles}
+
+\section{Alternative Formulations}
+
+ An 
+\PMlinkexternal{alternative, more general formulation of GR and GR Field Equations}{http://planetphysics.org/?op=getobj&from=objects&id=441} would involve a categorical framework, such as the category of pseudo-Riemannian manifolds, and/or the category of Riemannian manifolds, with, or without, a Riemannian metric. Expanding universes and black hole singularities,
+with or without hair, either with an event horizon, or `naked', can be treated within
+such an unified categorical framework of Riemannian/ pseudo-Riemanian manifolds and their 
+transformations represented either as morphisms or by functors and natural transformations
+between functors. Quantized versions in quantum gravity may also be available based on
+spin foams represented by time-dependent/ parameterized functors between spin networks
+including extremely intense, but finite, gravitational fields.  
+\section{Global Structure}
+
+\section{Initial Value Formulation}
+
+\section{Special Solutions}
+
+\subsection{Spatially Homogeneous Solutions}
+
+\subsection{Solutions with Symmetries}
+
+\subsection{Algebraically Special Solutions}
+
+\subsection{Linearization}
+
+\subsection{Singularities}
+
+\subsection{Asymptotically Flat Solutions}
+
+\subsection{Existence Theorems}
+
+%%%%%
+%%%%%
+\end{document}
