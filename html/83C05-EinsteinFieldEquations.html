@@ -1,0 +1,289 @@
+<!DOCTYPE html><html>
+<head>
+<title>Einstein field equations</title>
+<!--Generated on Sat Feb 10 13:22:19 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Einstein field equations</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Introduction and Definition</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph ltx_font_italic">Einstein Field Equations</em> are the fundamental equations of Einstein’s
+general theory of relativity. For a description of this physical theory and of
+the physical significance of solutions of these <span class="ltx_text ltx_font_typewriter">http://planetphysics.org/encyclopedia/TopicOnEquationsInMathematicalPhysics.html</span>equations, please see
+<span class="ltx_text ltx_font_typewriter">http://planetphysics.org/</span>PlanetPhysics. Here, we shall discuss the mathematical properties of these
+equations and their relevance to various branches of pure mathematics.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">The Einstein field equations are a system of second order coupled nonlinear partial differential equations for a Riemannian metric tensor on a Riemannian manifold. Let <math id="S1.p2.m1" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> be
+a differentiable manifold and let <math id="S1.p2.m2" class="ltx_Math" alttext="T_{\mu\nu}" display="inline"><msub><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> and <math id="S1.p2.m3" class="ltx_Math" alttext="g_{\mu\nu}" display="inline"><msub><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> be symmetric
+tensor fields <span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>Throughout this entry, we shall use index notation
+for tensor fields because that is common in the literature (especially physics literature) and is convenient for computation of particular solutions.
+Moreover, we shall, fittingly enough, employ Einstein’s summation convention.</span></span></span>. Further, assume that <math id="S1.p2.m4" class="ltx_Math" alttext="g_{\mu\nu}" display="inline"><msub><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> is invertible on a dense subset of <math id="S1.p2.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> and twice differentiable. (It is possible to relax the latter requirement by interpreting the equations distributionally.) Then the Einstein equations
+read as follows:
+<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>In the physics literature, the coefficient of <math id="S1.p2.m6" class="ltx_Math" alttext="T_{\mu\nu}" display="inline"><msub><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> is
+written as <math id="S1.p2.m7" class="ltx_Math" alttext="\frac{8\pi G}{c^{4}}" display="inline"><mfrac><mrow><mn>8</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>G</mi></mrow><msup><mi>c</mi><mn>4</mn></msup></mfrac></math>, where <math id="S1.p2.m8" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is the gravitational constant,
+<math id="S1.p2.m9" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math> is the light velocity constant but, since we are interested in the purely
+mathematical properties of these equations, we shall set <math id="S1.p2.m10" class="ltx_Math" alttext="G=c=1" display="inline"><mrow><mi>G</mi><mo>=</mo><mi>c</mi><mo>=</mo><mn>1</mn></mrow></math> here,
+which may be accomplished by working in a suitable set of physical units.
+It might also be worth mentioning that, in physics, the tensor <math id="S1.p2.m11" class="ltx_Math" alttext="T_{\mu\nu}" display="inline"><msub><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math>
+is the stress-energy tensor, which encodes data pertaining to the mass, energy, and momentum densities of the surrounding space. The number <math id="S1.p2.m12" class="ltx_Math" alttext="\Lambda" display="inline"><mi mathvariant="normal">Λ</mi></math>
+is known as the cosmological constant because it determines large-scale
+properties of the universe, such as whether it collapses, remains stationary, or expands.</span></span></span>
+</p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1" class="ltx_Math" alttext="G_{\mu\nu}=\Lambda g_{\mu\nu}+8\pi T_{\mu\nu}" display="block"><mrow><msub><mi>G</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub><mo>=</mo><mrow><mrow><mi mathvariant="normal">Λ</mi><mo>⁢</mo><msub><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></mrow><mo>+</mo><mrow><mn>8</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msub><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Here, <math id="S1.p2.m13" class="ltx_Math" alttext="G_{\mu\upsilon}=R_{\mu\upsilon}-\frac{1}{2}g_{\mu\upsilon}R" display="inline"><mrow><msub><mi>G</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>υ</mi></mrow></msub><mo>=</mo><mrow><msub><mi>R</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>υ</mi></mrow></msub><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>υ</mi></mrow></msub><mo>⁢</mo><mi>R</mi></mrow></mrow></mrow></math>
+is the <em class="ltx_emph ltx_font_italic">Einstein Tensor</em>, <math id="S1.p2.m14" class="ltx_Math" alttext="R_{\mu\upsilon}" display="inline"><msub><mi>R</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>υ</mi></mrow></msub></math> is the Ricci tensor, and
+<math id="S1.p2.m15" class="ltx_Math" alttext="R=g^{\mu\nu}R_{\mu\nu}" display="inline"><mrow><mi>R</mi><mo>=</mo><mrow><msup><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msup><mo>⁢</mo><msub><mi>R</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></mrow></mrow></math> is the Ricci scalar, and <math id="S1.p2.m16" class="ltx_Math" alttext="g^{\mu\nu}" display="inline"><msup><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msup></math> is the
+inverse metric tensor.</p>
+</div>
+<div id="S1.p3" class="ltx_para">
+<p class="ltx_p">One possibility is that the tensor field <math id="S1.p3.m1" class="ltx_Math" alttext="T_{\mu\nu}" display="inline"><msub><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> is specified and that
+these equations are then solved to obtain <math id="S1.p3.m2" class="ltx_Math" alttext="g_{\mu\nu}" display="inline"><msub><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math>. A noteworthy case of
+this is the <em class="ltx_emph ltx_font_italic">vacuum Einstein equations</em>, in which <math id="S1.p3.m3" class="ltx_Math" alttext="T_{\mu\nu}=0" display="inline"><mrow><msub><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow></math>.
+Another possibility is that <math id="S1.p3.m4" class="ltx_Math" alttext="T_{\mu\nu}" display="inline"><msub><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> is given in terms of some other
+fields on the manifold and that the Einstein equations are augmented by
+differential equations which describe those fields. In that case, one speaks
+of Einstein-Maxwell equations, Einstein-Yang-Mills equations, and the like
+depending on what these other fields may happen to be. It should be noted
+that, on account of the Bianchi identity, there is an integrability condition
+<math id="S1.p3.m5" class="ltx_Math" alttext="\nabla_{\mu}(g)T^{\mu\nu}=0" display="inline"><mrow><mrow><mrow><msub><mo>∇</mo><mi>μ</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁡</mo><msup><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msup></mrow><mo>=</mo><mn>0</mn></mrow></math>. (Here, <math id="S1.p3.m6" class="ltx_Math" alttext="\nabla(g)" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></math> denotes covariant
+differentiation with respect to the Levi-Civita connection of the metric
+tensor <math id="S1.p3.m7" class="ltx_Math" alttext="g_{\mu\nu}" display="inline"><msub><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math>.) When choosing <math id="S1.p3.m8" class="ltx_Math" alttext="T_{\mu\nu}" display="inline"><msub><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math>, these conditions must
+be taken into account in order to guarantee that a solution is possible.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Diffeomorphism Invariance</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">Because they are constructed from tensors, the Einstein equations have an
+important invariance property. Suppose that <math id="S2.p1.m1" class="ltx_Math" alttext="g_{\mu\nu}" display="inline"><msub><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> and <math id="S2.p1.m2" class="ltx_Math" alttext="T_{\mu\nu}" display="inline"><msub><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> satisfy the Einstein equations. Then, for any diffeomorphism <math id="S2.p1.m3" class="ltx_Math" alttext="f\colon M\to M" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>M</mi><mo>→</mo><mi>M</mi></mrow></mrow></math>, we also have that <math id="S2.p1.m4" class="ltx_Math" alttext="(f^{*}g)_{\mu\nu}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mrow><msup><mi>f</mi><mo>*</mo></msup><mo>⁢</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> and <math id="S2.p1.m5" class="ltx_Math" alttext="(f^{*}T)_{\mu\nu}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mrow><msup><mi>f</mi><mo>*</mo></msup><mo>⁢</mo><mi>T</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub></math> also
+satisfy the Einstein equations. (Here, the notation <math id="S2.p1.m6" class="ltx_Math" alttext="f^{*}" display="inline"><msup><mi>f</mi><mo>*</mo></msup></math> denotes pullback
+with respect to the diffeomorphism <math id="S2.p1.m7" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.)</p>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">This fact means that we must be careful when talking about specifying solutions
+by boundary conditions. Usually, when dealing with a differential equation,
+we would expect that we could specify a solution uniquely by providing enough
+boundary data. Here, however, this will not work since we could find a
+diffeomorphism which reduces to the identity near the boundary but differs
+from the identity elsewhere and use that to produce another solution which
+would satisfy the same boundary conditions. What one should do instead is to
+consier equivalence classes of solutions modulo diffeomorphism and only
+ask that boundary conditions specify solutions up to diffeomorphisms. As we
+shall see later, with such an understanding, one can indeed specify solutions
+in terms of initial data.</p>
+</div>
+<div id="S2.p3" class="ltx_para">
+<p class="ltx_p">In order to adress this issue and to be able to treat the Einstein equations
+much as one would treat other differential equations, a common practise is to
+supplement the Einstein equations with auxiliary condidtions which serve to
+define a coordinate system and hence single out a particular element of an
+equivalence class in diffeomorphism. While such auxiliary equations should
+ideally single out a representative for each equivalence class, in practise,
+one is content with considerably less — a particular choice auxiliary
+conditions might only work with some solutions or may only specify a
+subset of an equivalence class with more than one element.</p>
+</div>
+<div id="S2.p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Remarks:</span>
+The major obstruction to the GR theory is that Einstein’s GR equations–although solvable in principle–
+are readily solvable only in special cases, with specified boundary conditions. The bigger
+problem is the difficulty of formulating quantum field theories (QFT) in a manner
+which is logically consistent with Einstein’s GR formulation so that a valid Quantum Gravity (QG) theory
+is formulated that yields results consistent with both GR and quantum theories in the presence of intense
+gravitational fields. So far, encouraging results have been obtained only for the limiting case
+of low intensity gravitational fields as in S. Weinberg’s algebraic approach to QFT and QG using supersymmetry and
+graded ‘Lie’ algebras or superalgebras.</p>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Hyperbolic Formulations</h2>
+
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Variational Principles</h2>
+
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5 </span>Alternative Formulations</h2>
+
+<div id="S5.p1" class="ltx_para">
+<p class="ltx_p">An
+<span class="ltx_text ltx_font_typewriter">http://planetphysics.org/?op=getobj&amp;from=objects&amp;id=441</span>alternative, more general formulation of GR and GR Field Equations would involve a categorical framework, such as the category of pseudo-Riemannian manifolds, and/or the category of Riemannian manifolds, with, or without, a Riemannian metric. Expanding universes and black hole singularities,
+with or without hair, either with an event horizon, or ‘naked’, can be treated within
+such an unified categorical framework of Riemannian/ pseudo-Riemanian manifolds and their
+transformations represented either as morphisms or by functors and natural transformations
+between functors. Quantized versions in quantum gravity may also be available based on
+spin foams represented by time-dependent/ parameterized functors between spin networks
+including extremely intense, but finite, gravitational fields.</p>
+</div>
+</section>
+<section id="S6" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">6 </span>Global Structure</h2>
+
+</section>
+<section id="S7" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">7 </span>Initial Value Formulation</h2>
+
+</section>
+<section id="S8" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">8 </span>Special Solutions</h2>
+
+<section id="S8.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">8.1 </span>Spatially Homogeneous Solutions</h3>
+
+</section>
+<section id="S8.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">8.2 </span>Solutions with Symmetries</h3>
+
+</section>
+<section id="S8.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">8.3 </span>Algebraically Special Solutions</h3>
+
+</section>
+<section id="S8.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">8.4 </span>Linearization</h3>
+
+</section>
+<section id="S8.SS5" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">8.5 </span>Singularities</h3>
+
+</section>
+<section id="S8.SS6" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">8.6 </span>Asymptotically Flat Solutions</h3>
+
+</section>
+<section id="S8.SS7" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">8.7 </span>Existence Theorems</h3>
+
+<div id="S8.SS7.p1" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Einstein field equations</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">EinsteinFieldEquations</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:02:34</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:02:34</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">25</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 83C05</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Einstein’s GR equations</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CategoryOfRiemannianManifolds</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">PseudoRiemannianManifold</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">QuantumGeometry2</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">QuantumSpaceTimes</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">QuantumGravityTheories</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">RiemannianMetric</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">MathematicalProgrammesForDevelopingQuantumGravityTheories</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">MathematicalProgrammesForDevelopingQuantumGravityTheories</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 13:22:19 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

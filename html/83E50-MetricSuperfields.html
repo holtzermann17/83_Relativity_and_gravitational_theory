@@ -1,0 +1,386 @@
+<!DOCTYPE html><html>
+<head>
+<title>metric superfields</title>
+<!--Generated on Sat Feb 10 13:22:25 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">metric superfields</h1>
+<span class="ltx_ERROR undefined">\xyoption</span>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">curve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">This is a topic entry on metric superfields in quantum supergravity
+and the mathematical cncepts related to spinor and tensor fields.</p>
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Metric superfields: spinor and tensor fields</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">Because in supergravity both spinor and tensor fields are being
+considered, the gravitational fields are represented in terms of
+<em class="ltx_emph ltx_font_italic">tetrads</em>, <math id="S1.p1.m1" class="ltx_Math" alttext="e^{a}_{\mu}(x)," display="inline"><mrow><mrow><msubsup><mi>e</mi><mi>μ</mi><mi>a</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow></math> rather than in terms of the general
+relativistic metric <math id="S1.p1.m2" class="ltx_Math" alttext="g_{\mu\nu}(x)" display="inline"><mrow><msub><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>. The connections between
+these two distinct representations are as follows:</p>
+<table id="S1.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E1.m1" class="ltx_Math" alttext="g_{\mu\nu}(x)=\eta_{ab}~{}e^{a}_{\mu}(x)e^{b}_{\gamma}(x)~{}," display="block"><mrow><mrow><mrow><msub><mi>g</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="+3.3pt"><msub><mi>η</mi><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></msub></mpadded><mo>⁢</mo><msubsup><mi>e</mi><mi>μ</mi><mi>a</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msubsup><mi>e</mi><mi>γ</mi><mi>b</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="5.8pt" stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">with the general coordinates being indexed by <math id="S1.p1.m3" class="ltx_Math" alttext="\mu,\nu," display="inline"><mrow><mrow><mi>μ</mi><mo>,</mo><mi>ν</mi></mrow><mo>,</mo></mrow></math> etc.,
+whereas local coordinates that are being defined in a locally
+inertial coordinate system are labeled with superscripts a, b,
+etc.; <math id="S1.p1.m4" class="ltx_Math" alttext="\eta_{ab}" display="inline"><msub><mi>η</mi><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></msub></math> is the diagonal matrix with elements +1, +1,
++1 and -1. The tetrads are invariant to two distinct types of
+symmetry transformations–the local Lorentz transformations:</p>
+<table id="S1.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E2.m1" class="ltx_Math" alttext="e^{a}_{\mu}(x)\longmapsto\Lambda^{a}_{b}(x)e^{b}_{\mu}(x)~{}," display="block"><mrow><mrow><mrow><msubsup><mi>e</mi><mi>μ</mi><mi>a</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟼</mo><mrow><msubsup><mi mathvariant="normal">Λ</mi><mi>b</mi><mi>a</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msubsup><mi>e</mi><mi>μ</mi><mi>b</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="5.8pt" stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">(where <math id="S1.p1.m5" class="ltx_Math" alttext="\Lambda^{a}_{b}" display="inline"><msubsup><mi mathvariant="normal">Λ</mi><mi>b</mi><mi>a</mi></msubsup></math> is an arbitrary real matrix), and the general
+coordinate transformations:</p>
+<table id="S1.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E3.m1" class="ltx_Math" alttext="x^{\mu}\longmapsto(x^{\prime})^{\mu}(x)~{}." display="block"><mrow><mrow><msup><mi>x</mi><mi>μ</mi></msup><mo>⟼</mo><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mi>μ</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="5.8pt" stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">In a weak gravitational field the tetrad may be represented as:</p>
+<table id="S1.E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E4.m1" class="ltx_Math" alttext="e^{a}_{\mu}(x)=\delta^{a}_{\mu}(x)+2\kappa\Phi^{a}_{\mu}(x)~{}," display="block"><mrow><mrow><mrow><msubsup><mi>e</mi><mi>μ</mi><mi>a</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mi>δ</mi><mi>μ</mi><mi>a</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>κ</mi><mo>⁢</mo><msubsup><mi mathvariant="normal">Φ</mi><mi>μ</mi><mi>a</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="5.8pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.4)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S1.p1.m6" class="ltx_Math" alttext="\Phi^{a}_{\mu}(x)" display="inline"><mrow><msubsup><mi mathvariant="normal">Φ</mi><mi>μ</mi><mi>a</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is small compared with <math id="S1.p1.m7" class="ltx_Math" alttext="\delta^{a}_{\mu}(x)" display="inline"><mrow><msubsup><mi>δ</mi><mi>μ</mi><mi>a</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> for
+all <math id="S1.p1.m8" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> values, and <math id="S1.p1.m9" class="ltx_Math" alttext="\kappa=\surd 8\pi G" display="inline"><mrow><mi>κ</mi><mo>=</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>G</mi></mrow></msqrt></mrow></math>, where G is Newton’s
+gravitational constant. As it will be discussed next, the
+supersymmetry algebra (SA) implies that the graviton has a
+fermionic superpartner, the hypothetical <em class="ltx_emph ltx_font_italic">gravitino</em>, with
+helicities <math id="S1.p1.m10" class="ltx_Math" alttext="\pm" display="inline"><mo>±</mo></math> 3/2. Such a self-charge-conjugate massless
+particle as the gravitiono with helicities <math id="S1.p1.m11" class="ltx_Math" alttext="\pm" display="inline"><mo>±</mo></math> 3/2 can only have
+<em class="ltx_emph ltx_font_italic">low-energy</em> interactions if it is represented by a Majorana
+field <math id="S1.p1.m12" class="ltx_Math" alttext="\psi_{\mu}(x)" display="inline"><mrow><msub><mi>ψ</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> which is invariant under the gauge
+transformations:</p>
+<table id="S1.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E5.m1" class="ltx_Math" alttext="\psi_{\mu}(x)\longmapsto\psi_{\mu}(x)+\delta_{\mu}\psi(x)~{}," display="block"><mrow><mrow><mrow><msub><mi>ψ</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟼</mo><mrow><mrow><msub><mi>ψ</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>δ</mi><mi>μ</mi></msub><mo>⁢</mo><mi>ψ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="5.8pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5)</span></td>
+</tr>
+</table>
+<p class="ltx_p">with <math id="S1.p1.m13" class="ltx_Math" alttext="\psi(x)" display="inline"><mrow><mi>ψ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> being an arbitrary Majorana field as defined by
+Grisaru and Pendleton (1977). The tetrad field <math id="S1.p1.m14" class="ltx_Math" alttext="\Phi_{\mu\nu}(x)" display="inline"><mrow><msub><mi mathvariant="normal">Φ</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and the graviton field <math id="S1.p1.m15" class="ltx_Math" alttext="\psi_{\mu}(x)" display="inline"><mrow><msub><mi>ψ</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> are then
+incorporated into a term <math id="S1.p1.m16" class="ltx_Math" alttext="H_{\mu}(x,\theta)" display="inline"><mrow><msub><mi>H</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></math> defined as the
+<em class="ltx_emph ltx_font_italic">metric superfield</em>. The relationships between <math id="S1.p1.m17" class="ltx_Math" alttext="\Phi_{\mu_{\nu}}(x)" display="inline"><mrow><msub><mi mathvariant="normal">Φ</mi><msub><mi>μ</mi><mi>ν</mi></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="S1.p1.m18" class="ltx_Math" alttext="\psi_{\mu}(x)" display="inline"><mrow><msub><mi>ψ</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, on the one hand, and the components
+of the metric superfield <math id="S1.p1.m19" class="ltx_Math" alttext="H_{\mu}(x,\theta)" display="inline"><mrow><msub><mi>H</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, on the other hand,
+can be derived from the transformations of the whole metric
+superfield:</p>
+<table id="S1.E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E6.m1" class="ltx_Math" alttext="H_{\mu}(x,\theta)\longmapsto H_{\mu}(x,\theta)+\Delta_{\mu}(x,\theta)~{}," display="block"><mrow><mrow><mrow><msub><mi>H</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟼</mo><mrow><mrow><msub><mi>H</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi mathvariant="normal">Δ</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo rspace="5.8pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">by making the simplifying– and physically realistic– assumption
+of a weak gravitational field (further details can be found, for
+example, in Ch.31 of vol.3. of Weinberg, 1995). The interactions
+of the entire superfield <math id="S1.p1.m20" class="ltx_Math" alttext="H_{\mu}(x)" display="inline"><mrow><msub><mi>H</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> with matter would be then
+described by considering how a weak gravitational field,
+<math id="S1.p1.m21" class="ltx_Math" alttext="h_{\mu_{\nu}}" display="inline"><msub><mi>h</mi><msub><mi>μ</mi><mi>ν</mi></msub></msub></math> interacts with an energy-momentum tensor <math id="S1.p1.m22" class="ltx_Math" alttext="T^{\mu\nu}" display="inline"><msup><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msup></math> represented as a linear combination of components of a real
+vector superfield <math id="S1.p1.m23" class="ltx_Math" alttext="\Theta^{\mu}" display="inline"><msup><mi mathvariant="normal">Θ</mi><mi>μ</mi></msup></math>. Such interaction terms would,
+therefore, have the form:</p>
+<table id="S1.E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E7.m1" class="ltx_Math" alttext="I_{\mathcal{M}}=2\kappa\int dx^{4}[H_{\mu}\Theta^{\mu}]_{D}~{}," display="block"><mrow><mrow><msub><mi>I</mi><mi class="ltx_font_mathcaligraphic">ℳ</mi></msub><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>κ</mi><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mrow><mo>𝑑</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo>⁢</mo><mpadded width="+3.3pt"><msub><mrow><mo stretchy="false">[</mo><mrow><msub><mi>H</mi><mi>μ</mi></msub><mo>⁢</mo><msup><mi mathvariant="normal">Θ</mi><mi>μ</mi></msup></mrow><mo stretchy="false">]</mo></mrow><mi>D</mi></msub></mpadded></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.7)</span></td>
+</tr>
+</table>
+<p class="ltx_p">(<math id="S1.p1.m24" class="ltx_Math" alttext="\mathcal{M}" display="inline"><mi class="ltx_font_mathcaligraphic">ℳ</mi></math> denotes ‘matter’) integrated over a four-dimensional
+(Minkowski) spacetime with the metric defined by the superfield
+<math id="S1.p1.m25" class="ltx_Math" alttext="H_{\mu}(x,\theta)" display="inline"><mrow><msub><mi>H</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></math>. The term <math id="S1.p1.m26" class="ltx_Math" alttext="\Theta^{\mu}" display="inline"><msup><mi mathvariant="normal">Θ</mi><mi>μ</mi></msup></math>, as defined above, is
+physically a <em class="ltx_emph ltx_font_italic">supercurrent</em> and satisfies the conservation
+conditions:</p>
+<table id="S1.E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E8.m1" class="ltx_Math" alttext="\gamma^{\mu}\mathbf{D}\Theta_{\mu}=\mathbf{D}~{}," display="block"><mrow><mrow><mrow><msup><mi>γ</mi><mi>μ</mi></msup><mo>⁢</mo><mi>𝐃</mi><mo>⁢</mo><msub><mi mathvariant="normal">Θ</mi><mi>μ</mi></msub></mrow><mo>=</mo><mpadded width="+3.3pt"><mi>𝐃</mi></mpadded></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.8)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S1.p1.m27" class="ltx_Math" alttext="\mathbf{D}" display="inline"><mi>𝐃</mi></math> is the four-component super-derivative and <math id="S1.p1.m28" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>
+denotes a real chiral scalar superfield. This leads immediately to
+the calculation of the interactions of matter with a weak
+gravitational field as:</p>
+<table id="S1.E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E9.m1" class="ltx_Math" alttext="I_{\mathcal{M}}=\kappa\int d^{4}xT^{\mu\nu}(x)h_{\mu\nu}(x)~{}," display="block"><mrow><mrow><msub><mi>I</mi><mi class="ltx_font_mathcaligraphic">ℳ</mi></msub><mo>=</mo><mrow><mi>κ</mi><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><msup><mi>d</mi><mn>4</mn></msup><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>T</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>h</mi><mrow><mi>μ</mi><mo>⁢</mo><mi>ν</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="5.8pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.9)</span></td>
+</tr>
+</table>
+<p class="ltx_p">It is interesting to note that the gravitational actions for the
+superfield that are invariant under the generalized gauge
+transformations <math id="S1.p1.m29" class="ltx_Math" alttext="H_{\mu}\longmapsto H_{\mu}+\Delta_{\mu}" display="inline"><mrow><msub><mi>H</mi><mi>μ</mi></msub><mo>⟼</mo><mrow><msub><mi>H</mi><mi>μ</mi></msub><mo>+</mo><msub><mi mathvariant="normal">Δ</mi><mi>μ</mi></msub></mrow></mrow></math> lead to
+solutions of the Einstein field equations for a homogeneous,
+non-zero vacuum energy density <math id="S1.p1.m30" class="ltx_Math" alttext="\rho_{V}" display="inline"><msub><mi>ρ</mi><mi>V</mi></msub></math> that correspond to either
+a de Sitter space for <math id="S1.p1.m31" class="ltx_Math" alttext="\rho_{V}&gt;0" display="inline"><mrow><msub><mi>ρ</mi><mi>V</mi></msub><mo>&gt;</mo><mn>0</mn></mrow></math>, or an anti-de Sitter space for
+<math id="S1.p1.m32" class="ltx_Math" alttext="\rho_{V}&lt;0" display="inline"><mrow><msub><mi>ρ</mi><mi>V</mi></msub><mo>&lt;</mo><mn>0</mn></mrow></math>. Such spaces can be represented in terms of the
+hypersurface equation</p>
+<table id="S1.E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E10.m1" class="ltx_Math" alttext="x^{2}_{5}\pm\eta_{\mu,\nu}x^{\mu}x^{\nu}=R^{2}~{}," display="block"><mrow><mrow><mrow><msubsup><mi>x</mi><mn>5</mn><mn>2</mn></msubsup><mo>±</mo><mrow><msub><mi>η</mi><mrow><mi>μ</mi><mo>,</mo><mi>ν</mi></mrow></msub><mo>⁢</mo><msup><mi>x</mi><mi>μ</mi></msup><mo>⁢</mo><msup><mi>x</mi><mi>ν</mi></msup></mrow></mrow><mo>=</mo><mpadded width="+3.3pt"><msup><mi>R</mi><mn>2</mn></msup></mpadded></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.10)</span></td>
+</tr>
+</table>
+<p class="ltx_p">in a quasi-Euclidean five-dimensional space with the metric
+specified as:</p>
+<table id="S1.E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E11.m1" class="ltx_Math" alttext="ds^{2}=\eta_{\mu,\nu}x^{\mu}x^{\nu}\pm dx^{2}_{5}~{}," display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>s</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mrow><msub><mi>η</mi><mrow><mi>μ</mi><mo>,</mo><mi>ν</mi></mrow></msub><mo>⁢</mo><msup><mi>x</mi><mi>μ</mi></msup><mo>⁢</mo><msup><mi>x</mi><mi>ν</mi></msup></mrow><mo>±</mo><mrow><mi>d</mi><mo>⁢</mo><mpadded width="+3.3pt"><msubsup><mi>x</mi><mn>5</mn><mn>2</mn></msubsup></mpadded></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.11)</span></td>
+</tr>
+</table>
+<p class="ltx_p">with ’+’ for de Sitter space and ’-’ for anti-de Sitter space,
+respectively.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Note</span>
+The presentation above follows the exposition by S. Weinberg in his book
+on “Quantum Field Theory” (2000), vol. 3, Cambridge University Press (UK),
+in terms of both concepts and mathematical notations.</p>
+</div>
+<div id="S1.p3" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">metric superfields</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">MetricSuperfields</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 18:19:08</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 18:19:08</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">bci1 (20947)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">bci1 (20947)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">9</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">bci1 (20947)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 83E50</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 83C45</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Synonym</th>
+<td class="ltx_td ltx_align_left ltx_border_r">supergravity fields</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">SuperfieldsSuperspace</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">SpinNetworksAndSpinFoams</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">supergravity field</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 13:22:25 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
